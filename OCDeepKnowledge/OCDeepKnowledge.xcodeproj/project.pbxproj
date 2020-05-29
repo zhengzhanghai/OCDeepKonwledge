@@ -25,6 +25,7 @@
 /* Begin PBXFileReference section */
 		ADF217F1247E788100156FE8 /* OCDeepKnowledge */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = OCDeepKnowledge; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADF217F4247E788100156FE8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		ADF218062481193800156FE8 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +58,7 @@
 		ADF217F3247E788100156FE8 /* OCDeepKnowledge */ = {
 			isa = PBXGroup;
 			children = (
+				ADF218062481193800156FE8 /* main.cpp */,
 				ADF217F4247E788100156FE8 /* main.m */,
 			);
 			path = OCDeepKnowledge;
