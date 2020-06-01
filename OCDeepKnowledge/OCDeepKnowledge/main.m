@@ -13,27 +13,31 @@
 @interface Person: NSObject {
     @public
     int _age;
-    int _name;
-    int _oop;
+//    int _name;
+//    char _height;
+    
+    NSMutableArray *_string;
 }
-
+@end
+@implementation Person
 @end
 
-@implementation Person
-
+@interface Student : Person {
+    @public
+    int _studentId;
+}
+@end
+@implementation Student
 @end
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-
-        Person *person = [[Person alloc] init];
-        person->_age = 1;
-        person->_name = 2;
-        person->_oop = 3;
         
-        NSLog(@"%zd", class_getInstanceSize([Person class]));
-        NSLog(@"%zd", malloc_size((__bridge const void *)person));
+        NSString *str = @"abc";
+        NSLog(@"%@", str);
+        
         
     }
     return 0;
 }
+
