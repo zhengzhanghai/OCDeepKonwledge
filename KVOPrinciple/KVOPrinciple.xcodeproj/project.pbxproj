@@ -13,6 +13,8 @@
 		AD2291712488D127001E1A26 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD2291702488D127001E1A26 /* Assets.xcassets */; };
 		AD2291742488D127001E1A26 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD2291722488D127001E1A26 /* LaunchScreen.storyboard */; };
 		AD2291772488D127001E1A26 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AD2291762488D127001E1A26 /* main.m */; };
+		AD22917F2488D213001E1A26 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = AD22917E2488D213001E1A26 /* Person.m */; };
+		AD2291832488F263001E1A26 /* NSKVONotifying_Person.h in Sources */ = {isa = PBXBuildFile; fileRef = AD2291802488DB58001E1A26 /* NSKVONotifying_Person.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,10 @@
 		AD2291732488D127001E1A26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AD2291752488D127001E1A26 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AD2291762488D127001E1A26 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AD22917D2488D213001E1A26 /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		AD22917E2488D213001E1A26 /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		AD2291802488DB58001E1A26 /* NSKVONotifying_Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NSKVONotifying_Person.h; sourceTree = "<group>"; };
+		AD2291812488DB58001E1A26 /* NSKVONotifying_Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NSKVONotifying_Person.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +68,10 @@
 				AD2291652488D126001E1A26 /* AppDelegate.m */,
 				AD22916A2488D126001E1A26 /* ViewController.h */,
 				AD22916B2488D126001E1A26 /* ViewController.m */,
+				AD22917D2488D213001E1A26 /* Person.h */,
+				AD22917E2488D213001E1A26 /* Person.m */,
+				AD2291802488DB58001E1A26 /* NSKVONotifying_Person.h */,
+				AD2291812488DB58001E1A26 /* NSKVONotifying_Person.m */,
 				AD22916D2488D126001E1A26 /* Main.storyboard */,
 				AD2291702488D127001E1A26 /* Assets.xcassets */,
 				AD2291722488D127001E1A26 /* LaunchScreen.storyboard */,
@@ -141,8 +151,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD2291832488F263001E1A26 /* NSKVONotifying_Person.h in Sources */,
 				AD22916C2488D126001E1A26 /* ViewController.m in Sources */,
 				AD2291662488D126001E1A26 /* AppDelegate.m in Sources */,
+				AD22917F2488D213001E1A26 /* Person.m in Sources */,
 				AD2291772488D127001E1A26 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
