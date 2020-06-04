@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		ADF217F5247E788100156FE8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ADF217F4247E788100156FE8 /* main.m */; };
+		ADF2180F2487942000156FE8 /* NSObject+Test.m in Sources */ = {isa = PBXBuildFile; fileRef = ADF2180E2487942000156FE8 /* NSObject+Test.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -26,6 +27,8 @@
 		ADF217F1247E788100156FE8 /* OCDeepKnowledge */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = OCDeepKnowledge; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADF217F4247E788100156FE8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		ADF218062481193800156FE8 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		ADF2180D2487942000156FE8 /* NSObject+Test.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+Test.h"; sourceTree = "<group>"; };
+		ADF2180E2487942000156FE8 /* NSObject+Test.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Test.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +63,8 @@
 			children = (
 				ADF218062481193800156FE8 /* main.cpp */,
 				ADF217F4247E788100156FE8 /* main.m */,
+				ADF2180D2487942000156FE8 /* NSObject+Test.h */,
+				ADF2180E2487942000156FE8 /* NSObject+Test.m */,
 			);
 			path = OCDeepKnowledge;
 			sourceTree = "<group>";
@@ -122,6 +127,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ADF217F5247E788100156FE8 /* main.m in Sources */,
+				ADF2180F2487942000156FE8 /* NSObject+Test.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

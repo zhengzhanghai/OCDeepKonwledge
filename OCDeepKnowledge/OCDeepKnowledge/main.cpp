@@ -106,8 +106,6 @@ struct __AtAutoreleasePool {
 };
 
 #define __OFFSETOFIVAR__(TYPE, MEMBER) ((long long) &((TYPE *)0)->MEMBER)
-static __NSConstantStringImpl __NSConstantStringImpl__var_folders_hg_r383vhzn3895kcg9nsx4v9nr0000gn_T_main_b1d176_mi_0 __attribute__ ((section ("__DATA, __cfstring"))) = {__CFConstantStringClassReference,0x000007c8,"%zd",3};
-static __NSConstantStringImpl __NSConstantStringImpl__var_folders_hg_r383vhzn3895kcg9nsx4v9nr0000gn_T_main_b1d176_mi_1 __attribute__ ((section ("__DATA, __cfstring"))) = {__CFConstantStringClassReference,0x000007c8,"%zd",3};
 
 
 
@@ -36325,6 +36323,17 @@ extern void malloc_zone_enumerate_discharged_pointers(malloc_zone_t *zone, void 
 
 
 }
+#pragma clang assume_nonnull begin
+
+// @interface NSObject (Test)
+
+// + (void)test;
+
+// - (void)test;
+
+/* @end */
+
+#pragma clang assume_nonnull end
 
 
 #ifndef _REWRITER_typedef_Person
@@ -36333,15 +36342,20 @@ typedef struct objc_object Person;
 typedef struct {} _objc_exc_Person;
 #endif
 
+extern "C" unsigned long OBJC_IVAR_$_Person$_ppp;
 struct Person_IMPL {
 	struct NSObject_IMPL NSObject_IVARS;
 	int _age;
-	NSMutableArray *_string;
+	int _ppp;
 };
 
+// @property (nonatomic, assign) int ppp;
 /* @end */
 
 // @implementation Person
+
+static int _I_Person_ppp(Person * self, SEL _cmd) { return (*(int *)((char *)self + OBJC_IVAR_$_Person$_ppp)); }
+static void _I_Person_setPpp_(Person * self, SEL _cmd, int ppp) { (*(int *)((char *)self + OBJC_IVAR_$_Person$_ppp)) = ppp; }
 // @end
 
 
@@ -36351,22 +36365,26 @@ typedef struct objc_object Student;
 typedef struct {} _objc_exc_Student;
 #endif
 
+extern "C" unsigned long OBJC_IVAR_$_Student$_stuss;
 struct Student_IMPL {
 	struct Person_IMPL Person_IVARS;
-	int _studentId;
+	long long _studentId;
+	int _stuss;
 };
 
+// @property (nonatomic, assign) int stuss;
 /* @end */
 
 // @implementation Student
+
+static int _I_Student_stuss(Student * self, SEL _cmd) { return (*(int *)((char *)self + OBJC_IVAR_$_Student$_stuss)); }
+static void _I_Student_setStuss_(Student * self, SEL _cmd, int stuss) { (*(int *)((char *)self + OBJC_IVAR_$_Student$_stuss)) = stuss; }
 // @end
+
 
 int main(int argc, const char * argv[]) {
     /* @autoreleasepool */ { __AtAutoreleasePool __autoreleasepool; 
 
-        Person *student = ((Person *(*)(id, SEL))(void *)objc_msgSend)((id)((Person *(*)(id, SEL))(void *)objc_msgSend)((id)objc_getClass("Person"), sel_registerName("alloc")), sel_registerName("init"));
-        NSLog((NSString *)&__NSConstantStringImpl__var_folders_hg_r383vhzn3895kcg9nsx4v9nr0000gn_T_main_b1d176_mi_0, class_getInstanceSize(((Class (*)(id, SEL))(void *)objc_msgSend)((id)objc_getClass("Person"), sel_registerName("class"))));
-        NSLog((NSString *)&__NSConstantStringImpl__var_folders_hg_r383vhzn3895kcg9nsx4v9nr0000gn_T_main_b1d176_mi_1, malloc_size((__bridge const void *)student));
 
     }
     return 0;
@@ -36440,7 +36458,7 @@ extern "C" __declspec(dllimport) struct objc_cache _objc_empty_cache;
 #pragma warning(disable:4273)
 
 extern "C" unsigned long int OBJC_IVAR_$_Person$_age __attribute__ ((used, section ("__DATA,__objc_ivar"))) = __OFFSETOFIVAR__(struct Person, _age);
-extern "C" unsigned long int OBJC_IVAR_$_Person$_string __attribute__ ((used, section ("__DATA,__objc_ivar"))) = __OFFSETOFIVAR__(struct Person, _string);
+extern "C" unsigned long int OBJC_IVAR_$_Person$_ppp __attribute__ ((used, section ("__DATA,__objc_ivar"))) = __OFFSETOFIVAR__(struct Person, _ppp);
 
 static struct /*_ivar_list_t*/ {
 	unsigned int entsize;  // sizeof(struct _prop_t)
@@ -36450,7 +36468,30 @@ static struct /*_ivar_list_t*/ {
 	sizeof(_ivar_t),
 	2,
 	{{(unsigned long int *)&OBJC_IVAR_$_Person$_age, "_age", "i", 2, 4},
-	 {(unsigned long int *)&OBJC_IVAR_$_Person$_string, "_string", "@\"NSMutableArray\"", 3, 8}}
+	 {(unsigned long int *)&OBJC_IVAR_$_Person$_ppp, "_ppp", "i", 2, 4}}
+};
+
+static struct /*_method_list_t*/ {
+	unsigned int entsize;  // sizeof(struct _objc_method)
+	unsigned int method_count;
+	struct _objc_method method_list[4];
+} _OBJC_$_INSTANCE_METHODS_Person __attribute__ ((used, section ("__DATA,__objc_const"))) = {
+	sizeof(_objc_method),
+	4,
+	{{(struct objc_selector *)"ppp", "i16@0:8", (void *)_I_Person_ppp},
+	{(struct objc_selector *)"setPpp:", "v20@0:8i16", (void *)_I_Person_setPpp_},
+	{(struct objc_selector *)"ppp", "i16@0:8", (void *)_I_Person_ppp},
+	{(struct objc_selector *)"setPpp:", "v20@0:8i16", (void *)_I_Person_setPpp_}}
+};
+
+static struct /*_prop_list_t*/ {
+	unsigned int entsize;  // sizeof(struct _prop_t)
+	unsigned int count_of_properties;
+	struct _prop_t prop_list[1];
+} _OBJC_$_PROP_LIST_Person __attribute__ ((used, section ("__DATA,__objc_const"))) = {
+	sizeof(_prop_t),
+	1,
+	{{"ppp","Ti,N,V_ppp"}}
 };
 
 static struct _class_ro_t _OBJC_METACLASS_RO_$_Person __attribute__ ((used, section ("__DATA,__objc_const"))) = {
@@ -36468,11 +36509,11 @@ static struct _class_ro_t _OBJC_CLASS_RO_$_Person __attribute__ ((used, section 
 	0, __OFFSETOFIVAR__(struct Person, _age), sizeof(struct Person_IMPL), 
 	0, 
 	"Person",
-	0, 
+	(const struct _method_list_t *)&_OBJC_$_INSTANCE_METHODS_Person,
 	0, 
 	(const struct _ivar_list_t *)&_OBJC_$_INSTANCE_VARIABLES_Person,
 	0, 
-	0, 
+	(const struct _prop_list_t *)&_OBJC_$_PROP_LIST_Person,
 };
 
 extern "C" __declspec(dllimport) struct _class_t OBJC_METACLASS_$_NSObject;
@@ -36504,15 +36545,40 @@ static void OBJC_CLASS_SETUP_$_Person(void ) {
 }
 
 extern "C" unsigned long int OBJC_IVAR_$_Student$_studentId __attribute__ ((used, section ("__DATA,__objc_ivar"))) = __OFFSETOFIVAR__(struct Student, _studentId);
+extern "C" unsigned long int OBJC_IVAR_$_Student$_stuss __attribute__ ((used, section ("__DATA,__objc_ivar"))) = __OFFSETOFIVAR__(struct Student, _stuss);
 
 static struct /*_ivar_list_t*/ {
 	unsigned int entsize;  // sizeof(struct _prop_t)
 	unsigned int count;
-	struct _ivar_t ivar_list[1];
+	struct _ivar_t ivar_list[2];
 } _OBJC_$_INSTANCE_VARIABLES_Student __attribute__ ((used, section ("__DATA,__objc_const"))) = {
 	sizeof(_ivar_t),
+	2,
+	{{(unsigned long int *)&OBJC_IVAR_$_Student$_studentId, "_studentId", "q", 3, 8},
+	 {(unsigned long int *)&OBJC_IVAR_$_Student$_stuss, "_stuss", "i", 2, 4}}
+};
+
+static struct /*_method_list_t*/ {
+	unsigned int entsize;  // sizeof(struct _objc_method)
+	unsigned int method_count;
+	struct _objc_method method_list[4];
+} _OBJC_$_INSTANCE_METHODS_Student __attribute__ ((used, section ("__DATA,__objc_const"))) = {
+	sizeof(_objc_method),
+	4,
+	{{(struct objc_selector *)"stuss", "i16@0:8", (void *)_I_Student_stuss},
+	{(struct objc_selector *)"setStuss:", "v20@0:8i16", (void *)_I_Student_setStuss_},
+	{(struct objc_selector *)"stuss", "i16@0:8", (void *)_I_Student_stuss},
+	{(struct objc_selector *)"setStuss:", "v20@0:8i16", (void *)_I_Student_setStuss_}}
+};
+
+static struct /*_prop_list_t*/ {
+	unsigned int entsize;  // sizeof(struct _prop_t)
+	unsigned int count_of_properties;
+	struct _prop_t prop_list[1];
+} _OBJC_$_PROP_LIST_Student __attribute__ ((used, section ("__DATA,__objc_const"))) = {
+	sizeof(_prop_t),
 	1,
-	{{(unsigned long int *)&OBJC_IVAR_$_Student$_studentId, "_studentId", "i", 2, 4}}
+	{{"stuss","Ti,N,V_stuss"}}
 };
 
 static struct _class_ro_t _OBJC_METACLASS_RO_$_Student __attribute__ ((used, section ("__DATA,__objc_const"))) = {
@@ -36530,11 +36596,11 @@ static struct _class_ro_t _OBJC_CLASS_RO_$_Student __attribute__ ((used, section
 	0, __OFFSETOFIVAR__(struct Student, _studentId), sizeof(struct Student_IMPL), 
 	0, 
 	"Student",
-	0, 
+	(const struct _method_list_t *)&_OBJC_$_INSTANCE_METHODS_Student,
 	0, 
 	(const struct _ivar_list_t *)&_OBJC_$_INSTANCE_VARIABLES_Student,
 	0, 
-	0, 
+	(const struct _prop_list_t *)&_OBJC_$_PROP_LIST_Student,
 };
 
 extern "C" __declspec(dllexport) struct _class_t OBJC_METACLASS_$_Person;

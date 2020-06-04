@@ -9,11 +9,13 @@
 #import <Foundation/Foundation.h>
 #import <objc/runtime.h>
 #import <malloc/malloc.h>
+#import "NSObject+Test.h"
 
 @interface Person: NSObject {
     @public
     int _age;
 }
+@property (nonatomic, assign) int ppp;
 @end
 @implementation Person
 @end
@@ -22,28 +24,16 @@
     @public
     long long _studentId;
 }
+@property (nonatomic, assign) int stuss;
 @end
 @implementation Student
 @end
 
-struct Person_Impl {
-    Class isa;
-    int _age;
-    long long _studentId;
-};
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        Student *student = [[Student alloc] init];
-        student->_age = 258;
-        student->_studentId = 2;
         
-        struct Person_Impl *personImpl = (__bridge struct Person_Impl *)student;
-        personImpl->_age = 20;
-        personImpl->_studentId = 30;
         
-        NSLog(@"");
     }
     return 0;
 }
-
