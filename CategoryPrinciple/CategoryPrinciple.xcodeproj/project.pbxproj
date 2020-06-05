@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		AD22919124890146001E1A26 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AD22919024890146001E1A26 /* main.m */; };
 		AD22919924890374001E1A26 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = AD22919824890374001E1A26 /* Person.m */; };
+		AD22919C248904FD001E1A26 /* Person+Test.m in Sources */ = {isa = PBXBuildFile; fileRef = AD22919B248904FD001E1A26 /* Person+Test.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +29,8 @@
 		AD22919024890146001E1A26 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AD22919724890374001E1A26 /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
 		AD22919824890374001E1A26 /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		AD22919A248904FD001E1A26 /* Person+Test.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Person+Test.h"; sourceTree = "<group>"; };
+		AD22919B248904FD001E1A26 /* Person+Test.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Person+Test.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +66,8 @@
 				AD22919024890146001E1A26 /* main.m */,
 				AD22919724890374001E1A26 /* Person.h */,
 				AD22919824890374001E1A26 /* Person.m */,
+				AD22919A248904FD001E1A26 /* Person+Test.h */,
+				AD22919B248904FD001E1A26 /* Person+Test.m */,
 			);
 			path = CategoryPrinciple;
 			sourceTree = "<group>";
@@ -124,6 +129,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD22919C248904FD001E1A26 /* Person+Test.m in Sources */,
 				AD22919924890374001E1A26 /* Person.m in Sources */,
 				AD22919124890146001E1A26 /* main.m in Sources */,
 			);

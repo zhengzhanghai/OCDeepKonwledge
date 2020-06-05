@@ -7,11 +7,15 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Person.h"
+
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
         // insert code here...
         NSLog(@"Hello, World!");
+        
+        [[Person alloc] run];
     }
     return 0;
 }
