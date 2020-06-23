@@ -17,7 +17,7 @@
 @interface Person : NSObject
 {
     @public
-//    int age;
+    int age;
 //    int _age;
 //    int _isAge;
 //    int isAge;

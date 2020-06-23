@@ -25,7 +25,7 @@
 }
 
 //- (void)setAge:(int)age {
-//    _age = age;
+////    _age = age;
 //    NSLog(@"调用setAge:方法");
 //}
 
@@ -46,4 +46,14 @@
     return true;
 }
 
+
+- (void)willChangeValueForKey:(NSString *)key {
+    [super willChangeValueForKey:key];
+    NSLog(@"willChangeValueForKey");
+}
+
+- (void)didChangeValueForKey:(NSString *)key {
+    [super didChangeValueForKey:key];
+    NSLog(@"didChangeValueForKey");
+}
 @end
