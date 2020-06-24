@@ -17,13 +17,13 @@
 @interface Person : NSObject
 {
     @public
-    int age;
+//    int age;
 //    int _age;
 //    int _isAge;
 //    int isAge;
 }
 
-//@property (nonatomic, assign, readonly) int age;
+@property (nonatomic, assign) int age;
 
 @property (nonatomic, strong) Cat *cat;
 
