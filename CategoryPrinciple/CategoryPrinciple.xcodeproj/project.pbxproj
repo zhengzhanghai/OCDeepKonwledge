@@ -9,17 +9,19 @@
 /* Begin PBXBuildFile section */
 		AD22919124890146001E1A26 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AD22919024890146001E1A26 /* main.m */; };
 		AD22919924890374001E1A26 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = AD22919824890374001E1A26 /* Person.m */; };
-		AD22919C248904FD001E1A26 /* Person+Test.m in Sources */ = {isa = PBXBuildFile; fileRef = AD22919B248904FD001E1A26 /* Person+Test.m */; };
+		ADDE349F24AF25B800DFD72E /* Person+Eat.m in Sources */ = {isa = PBXBuildFile; fileRef = ADDE349E24AF25B800DFD72E /* Person+Eat.m */; };
+		ADDE34A224AF25E500DFD72E /* Person+Sleep.m in Sources */ = {isa = PBXBuildFile; fileRef = ADDE34A124AF25E500DFD72E /* Person+Sleep.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		AD22918B24890146001E1A26 /* CopyFiles */ = {
+		AD22918B24890146001E1A26 /* Copy Files */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
 			dstSubfolderSpec = 0;
 			files = (
 			);
+			name = "Copy Files";
 			runOnlyForDeploymentPostprocessing = 1;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -29,8 +31,14 @@
 		AD22919024890146001E1A26 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AD22919724890374001E1A26 /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
 		AD22919824890374001E1A26 /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
-		AD22919A248904FD001E1A26 /* Person+Test.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Person+Test.h"; sourceTree = "<group>"; };
-		AD22919B248904FD001E1A26 /* Person+Test.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Person+Test.m"; sourceTree = "<group>"; };
+		ADDE349D24AF25B800DFD72E /* Person+Eat.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Person+Eat.h"; sourceTree = "<group>"; };
+		ADDE349E24AF25B800DFD72E /* Person+Eat.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Person+Eat.m"; sourceTree = "<group>"; };
+		ADDE34A024AF25E500DFD72E /* Person+Sleep.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Person+Sleep.h"; sourceTree = "<group>"; };
+		ADDE34A124AF25E500DFD72E /* Person+Sleep.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Person+Sleep.m"; sourceTree = "<group>"; };
+		ADDE34A324AF261500DFD72E /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		ADDE34A424AF26DE00DFD72E /* Person+Sleep.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Person+Sleep.cpp"; sourceTree = "<group>"; };
+		ADDE34A624AF27DF00DFD72E /* Person+Eat.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = "Person+Eat.cpp"; sourceTree = "<group>"; };
+		ADDE34A824AF352E00DFD72E /* Person.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Person.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,11 +71,17 @@
 		AD22918F24890146001E1A26 /* CategoryPrinciple */ = {
 			isa = PBXGroup;
 			children = (
+				ADDE34A324AF261500DFD72E /* main.cpp */,
 				AD22919024890146001E1A26 /* main.m */,
 				AD22919724890374001E1A26 /* Person.h */,
 				AD22919824890374001E1A26 /* Person.m */,
-				AD22919A248904FD001E1A26 /* Person+Test.h */,
-				AD22919B248904FD001E1A26 /* Person+Test.m */,
+				ADDE34A824AF352E00DFD72E /* Person.cpp */,
+				ADDE34A024AF25E500DFD72E /* Person+Sleep.h */,
+				ADDE34A124AF25E500DFD72E /* Person+Sleep.m */,
+				ADDE34A424AF26DE00DFD72E /* Person+Sleep.cpp */,
+				ADDE349D24AF25B800DFD72E /* Person+Eat.h */,
+				ADDE349E24AF25B800DFD72E /* Person+Eat.m */,
+				ADDE34A624AF27DF00DFD72E /* Person+Eat.cpp */,
 			);
 			path = CategoryPrinciple;
 			sourceTree = "<group>";
@@ -81,7 +95,7 @@
 			buildPhases = (
 				AD22918924890146001E1A26 /* Sources */,
 				AD22918A24890146001E1A26 /* Frameworks */,
-				AD22918B24890146001E1A26 /* CopyFiles */,
+				AD22918B24890146001E1A26 /* Copy Files */,
 			);
 			buildRules = (
 			);
@@ -129,7 +143,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD22919C248904FD001E1A26 /* Person+Test.m in Sources */,
+				ADDE34A224AF25E500DFD72E /* Person+Sleep.m in Sources */,
+				ADDE349F24AF25B800DFD72E /* Person+Eat.m in Sources */,
 				AD22919924890374001E1A26 /* Person.m in Sources */,
 				AD22919124890146001E1A26 /* main.m in Sources */,
 			);

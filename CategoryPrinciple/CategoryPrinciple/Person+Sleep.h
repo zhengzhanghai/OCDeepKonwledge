@@ -1,8 +1,8 @@
 //
-//  Person+Test.h
+//  Person+Sleep.h
 //  CategoryPrinciple
 //
-//  Created by 郑章海 on 2020/6/4.
+//  Created by 郑章海 on 2020/7/3.
 //  Copyright © 2020 zzh. All rights reserved.
 //
 
@@ -10,9 +10,11 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface Person (Test)
+@interface Person (Sleep)
 
-- (void)run;
+- (void)sleep;
+
+- (void)eat123;
 
 @end
 

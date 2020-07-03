@@ -8,14 +8,14 @@
 
 #import <Foundation/Foundation.h>
 #import "Person.h"
+#import "Person+Sleep.h"
+#import "Person+Eat.h"
 
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        // insert code here...
-        NSLog(@"Hello, World!");
-        
-        [[Person alloc] run];
+        // insert code here...        
+        [[Person alloc] eat123];
     }
     return 0;
 }
