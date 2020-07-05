@@ -12,6 +12,7 @@
 #import "Person+Eat.h"
 #import "Student.h"
 #import <objc/message.h>
+#import "NSObject+Test.h"
 
 /* 获取对象的所有方法 */
 NSArray * getAllMethods(Class class)
@@ -53,6 +54,19 @@ int main(int argc, const char * argv[]) {
 //        [[Person alloc] eat123];
 //        [Person hhhhhh];
 //        [Student alloc];
+        
+//        NSObject *object = [[NSObject alloc] init];
+//        object.height = 10;
+//
+//        NSObject *object1 = [[NSObject alloc] init];
+//        object1.height = 40;
+//        NSLog(@"---- %d  %d", object.height, object1.height);
+        
+        
+        NSString *str1 = @"name";
+        NSString *str2 = @"name";
+        
+        NSLog(@"%p  %p", str1, str2);
     }
     return 0;
 }

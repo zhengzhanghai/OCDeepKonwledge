@@ -17,6 +17,7 @@
 		ADBB7B9D24B0115C00035D4F /* Animate+Sleep.m in Sources */ = {isa = PBXBuildFile; fileRef = ADBB7B9C24B0115C00035D4F /* Animate+Sleep.m */; };
 		ADBB7BA024B0116900035D4F /* Cat+miao.m in Sources */ = {isa = PBXBuildFile; fileRef = ADBB7B9F24B0116900035D4F /* Cat+miao.m */; };
 		ADBB7BA324B0165200035D4F /* Student+Happy.m in Sources */ = {isa = PBXBuildFile; fileRef = ADBB7BA224B0165200035D4F /* Student+Happy.m */; };
+		ADBB7BA624B1580600035D4F /* NSObject+Test.m in Sources */ = {isa = PBXBuildFile; fileRef = ADBB7BA524B1580600035D4F /* NSObject+Test.m */; };
 		ADDE34A224AF25E500DFD72E /* Person+Sleep.m in Sources */ = {isa = PBXBuildFile; fileRef = ADDE34A124AF25E500DFD72E /* Person+Sleep.m */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +53,8 @@
 		ADBB7B9F24B0116900035D4F /* Cat+miao.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Cat+miao.m"; sourceTree = "<group>"; };
 		ADBB7BA124B0165200035D4F /* Student+Happy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Student+Happy.h"; sourceTree = "<group>"; };
 		ADBB7BA224B0165200035D4F /* Student+Happy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Student+Happy.m"; sourceTree = "<group>"; };
+		ADBB7BA424B1580600035D4F /* NSObject+Test.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSObject+Test.h"; sourceTree = "<group>"; };
+		ADBB7BA524B1580600035D4F /* NSObject+Test.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Test.m"; sourceTree = "<group>"; };
 		ADDE349D24AF25B800DFD72E /* Person+Eat.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Person+Eat.h"; sourceTree = "<group>"; };
 		ADDE349E24AF25B800DFD72E /* Person+Eat.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Person+Eat.m"; sourceTree = "<group>"; };
 		ADDE34A024AF25E500DFD72E /* Person+Sleep.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Person+Sleep.h"; sourceTree = "<group>"; };
@@ -117,6 +120,8 @@
 				ADBB7B9924B0113100035D4F /* Cat.m */,
 				ADBB7B9E24B0116900035D4F /* Cat+miao.h */,
 				ADBB7B9F24B0116900035D4F /* Cat+miao.m */,
+				ADBB7BA424B1580600035D4F /* NSObject+Test.h */,
+				ADBB7BA524B1580600035D4F /* NSObject+Test.m */,
 			);
 			path = CategoryPrinciple;
 			sourceTree = "<group>";
@@ -179,6 +184,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ADBB7BA324B0165200035D4F /* Student+Happy.m in Sources */,
+				ADBB7BA624B1580600035D4F /* NSObject+Test.m in Sources */,
 				ADBB7B8E24AFFF6200035D4F /* Person+Eat.m in Sources */,
 				ADBB7B9724B0110A00035D4F /* Animate.m in Sources */,
 				ADBB7B9A24B0113100035D4F /* Cat.m in Sources */,
