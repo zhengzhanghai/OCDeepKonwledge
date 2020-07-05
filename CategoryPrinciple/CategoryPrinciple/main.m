@@ -10,6 +10,7 @@
 #import "Person.h"
 #import "Person+Sleep.h"
 #import "Person+Eat.h"
+#import "Student.h"
 #import <objc/message.h>
 
 /* 获取对象的所有方法 */
@@ -39,8 +40,19 @@ NSArray * getAllMethods(Class class)
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        // insert code here...        
-        [[Person alloc] eat123];
+
+//        Class class = NSClassFromString(@"Person");
+//        NSLog(@"%@", getAllMethods(class));
+        
+//        Person *person = [[Person alloc] init];
+//
+//        NSLog(@"%@", getAllMethods([person class]));
+//
+//        NSLog(@"%@", getAllMethods(object_getClass([Person class])));
+        
+//        [[Person alloc] eat123];
+//        [Person hhhhhh];
+//        [Student alloc];
     }
     return 0;
 }

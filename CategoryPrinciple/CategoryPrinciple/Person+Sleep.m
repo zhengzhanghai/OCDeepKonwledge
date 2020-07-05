@@ -19,4 +19,17 @@
     NSLog(@"Sleep  eat123");
 }
 
+
++ (void)eatMyFood {
+    
+}
+
++ (void)load {
+    NSLog(@"Person  sleep");
+}
+
++ (void)initialize
+{
+    NSLog(@"initialize  person sleep");
+}
 @end

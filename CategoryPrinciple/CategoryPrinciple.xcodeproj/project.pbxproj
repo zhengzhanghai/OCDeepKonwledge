@@ -9,7 +9,14 @@
 /* Begin PBXBuildFile section */
 		AD22919124890146001E1A26 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AD22919024890146001E1A26 /* main.m */; };
 		AD22919924890374001E1A26 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = AD22919824890374001E1A26 /* Person.m */; };
-		ADDE349F24AF25B800DFD72E /* Person+Eat.m in Sources */ = {isa = PBXBuildFile; fileRef = ADDE349E24AF25B800DFD72E /* Person+Eat.m */; };
+		ADBB7B8E24AFFF6200035D4F /* Person+Eat.m in Sources */ = {isa = PBXBuildFile; fileRef = ADDE349E24AF25B800DFD72E /* Person+Eat.m */; };
+		ADBB7B9124B0109000035D4F /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = ADBB7B9024B0109000035D4F /* Student.m */; };
+		ADBB7B9424B010A100035D4F /* Student+Study.m in Sources */ = {isa = PBXBuildFile; fileRef = ADBB7B9324B010A100035D4F /* Student+Study.m */; };
+		ADBB7B9724B0110A00035D4F /* Animate.m in Sources */ = {isa = PBXBuildFile; fileRef = ADBB7B9624B0110A00035D4F /* Animate.m */; };
+		ADBB7B9A24B0113100035D4F /* Cat.m in Sources */ = {isa = PBXBuildFile; fileRef = ADBB7B9924B0113100035D4F /* Cat.m */; };
+		ADBB7B9D24B0115C00035D4F /* Animate+Sleep.m in Sources */ = {isa = PBXBuildFile; fileRef = ADBB7B9C24B0115C00035D4F /* Animate+Sleep.m */; };
+		ADBB7BA024B0116900035D4F /* Cat+miao.m in Sources */ = {isa = PBXBuildFile; fileRef = ADBB7B9F24B0116900035D4F /* Cat+miao.m */; };
+		ADBB7BA324B0165200035D4F /* Student+Happy.m in Sources */ = {isa = PBXBuildFile; fileRef = ADBB7BA224B0165200035D4F /* Student+Happy.m */; };
 		ADDE34A224AF25E500DFD72E /* Person+Sleep.m in Sources */ = {isa = PBXBuildFile; fileRef = ADDE34A124AF25E500DFD72E /* Person+Sleep.m */; };
 /* End PBXBuildFile section */
 
@@ -31,6 +38,20 @@
 		AD22919024890146001E1A26 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		AD22919724890374001E1A26 /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
 		AD22919824890374001E1A26 /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		ADBB7B8F24B0109000035D4F /* Student.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Student.h; sourceTree = "<group>"; };
+		ADBB7B9024B0109000035D4F /* Student.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Student.m; sourceTree = "<group>"; };
+		ADBB7B9224B010A100035D4F /* Student+Study.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Student+Study.h"; sourceTree = "<group>"; };
+		ADBB7B9324B010A100035D4F /* Student+Study.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Student+Study.m"; sourceTree = "<group>"; };
+		ADBB7B9524B0110A00035D4F /* Animate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Animate.h; sourceTree = "<group>"; };
+		ADBB7B9624B0110A00035D4F /* Animate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Animate.m; sourceTree = "<group>"; };
+		ADBB7B9824B0113100035D4F /* Cat.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Cat.h; sourceTree = "<group>"; };
+		ADBB7B9924B0113100035D4F /* Cat.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Cat.m; sourceTree = "<group>"; };
+		ADBB7B9B24B0115C00035D4F /* Animate+Sleep.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Animate+Sleep.h"; sourceTree = "<group>"; };
+		ADBB7B9C24B0115C00035D4F /* Animate+Sleep.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Animate+Sleep.m"; sourceTree = "<group>"; };
+		ADBB7B9E24B0116900035D4F /* Cat+miao.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Cat+miao.h"; sourceTree = "<group>"; };
+		ADBB7B9F24B0116900035D4F /* Cat+miao.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Cat+miao.m"; sourceTree = "<group>"; };
+		ADBB7BA124B0165200035D4F /* Student+Happy.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Student+Happy.h"; sourceTree = "<group>"; };
+		ADBB7BA224B0165200035D4F /* Student+Happy.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Student+Happy.m"; sourceTree = "<group>"; };
 		ADDE349D24AF25B800DFD72E /* Person+Eat.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Person+Eat.h"; sourceTree = "<group>"; };
 		ADDE349E24AF25B800DFD72E /* Person+Eat.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Person+Eat.m"; sourceTree = "<group>"; };
 		ADDE34A024AF25E500DFD72E /* Person+Sleep.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Person+Sleep.h"; sourceTree = "<group>"; };
@@ -75,6 +96,12 @@
 				AD22919024890146001E1A26 /* main.m */,
 				AD22919724890374001E1A26 /* Person.h */,
 				AD22919824890374001E1A26 /* Person.m */,
+				ADBB7B8F24B0109000035D4F /* Student.h */,
+				ADBB7B9024B0109000035D4F /* Student.m */,
+				ADBB7B9224B010A100035D4F /* Student+Study.h */,
+				ADBB7B9324B010A100035D4F /* Student+Study.m */,
+				ADBB7BA124B0165200035D4F /* Student+Happy.h */,
+				ADBB7BA224B0165200035D4F /* Student+Happy.m */,
 				ADDE34A824AF352E00DFD72E /* Person.cpp */,
 				ADDE34A024AF25E500DFD72E /* Person+Sleep.h */,
 				ADDE34A124AF25E500DFD72E /* Person+Sleep.m */,
@@ -82,6 +109,14 @@
 				ADDE349D24AF25B800DFD72E /* Person+Eat.h */,
 				ADDE349E24AF25B800DFD72E /* Person+Eat.m */,
 				ADDE34A624AF27DF00DFD72E /* Person+Eat.cpp */,
+				ADBB7B9524B0110A00035D4F /* Animate.h */,
+				ADBB7B9624B0110A00035D4F /* Animate.m */,
+				ADBB7B9B24B0115C00035D4F /* Animate+Sleep.h */,
+				ADBB7B9C24B0115C00035D4F /* Animate+Sleep.m */,
+				ADBB7B9824B0113100035D4F /* Cat.h */,
+				ADBB7B9924B0113100035D4F /* Cat.m */,
+				ADBB7B9E24B0116900035D4F /* Cat+miao.h */,
+				ADBB7B9F24B0116900035D4F /* Cat+miao.m */,
 			);
 			path = CategoryPrinciple;
 			sourceTree = "<group>";
@@ -143,8 +178,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADBB7BA324B0165200035D4F /* Student+Happy.m in Sources */,
+				ADBB7B8E24AFFF6200035D4F /* Person+Eat.m in Sources */,
+				ADBB7B9724B0110A00035D4F /* Animate.m in Sources */,
+				ADBB7B9A24B0113100035D4F /* Cat.m in Sources */,
+				ADBB7B9424B010A100035D4F /* Student+Study.m in Sources */,
+				ADBB7B9D24B0115C00035D4F /* Animate+Sleep.m in Sources */,
+				ADBB7BA024B0116900035D4F /* Cat+miao.m in Sources */,
 				ADDE34A224AF25E500DFD72E /* Person+Sleep.m in Sources */,
-				ADDE349F24AF25B800DFD72E /* Person+Eat.m in Sources */,
+				ADBB7B9124B0109000035D4F /* Student.m in Sources */,
 				AD22919924890374001E1A26 /* Person.m in Sources */,
 				AD22919124890146001E1A26 /* main.m in Sources */,
 			);

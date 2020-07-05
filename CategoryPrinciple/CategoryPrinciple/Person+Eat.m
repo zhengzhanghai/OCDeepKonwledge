@@ -22,4 +22,12 @@
     
 }
 
++ (void)load {
+    NSLog(@"Person eat");
+}
+
++ (void)initialize
+{
+    NSLog(@"initialize  person eat");
+}
 @end

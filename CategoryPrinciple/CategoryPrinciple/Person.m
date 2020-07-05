@@ -14,4 +14,19 @@
     NSLog(@"本类  run");
 }
 
+- (void)eat123 {
+    
+}
+
++ (void)load {
+    NSLog(@"Person");
+}
+
++ (void)initialize {
+    NSLog(@"initialize");
+}
+
++ (void)hhhhhh {
+    NSLog(@"");
+}
 @end
